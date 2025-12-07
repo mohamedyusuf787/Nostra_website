@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Link CSS File-->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Link Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Playfair font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Orbit:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body class="bg-blue-400">
+     <!-- Background Image -->
+    <div class="hero-collection-image w-full">
+        <img src="./images/collection-hero-image.png" class="w-full h-auto object-cover">
+    </div>
+</div>
+
+    <!-- CENTER CONTENT -->
+    <div class="hero-collection-content 
+        absolute top-1/2 left-1/2 
+        -translate-x-1/2 -translate-y-1/2
+        text-black text-center 
+        md:text-left md:w-full">
+
+        <h1 class="playfair-font text-5xl font-bold">Welcome to Nostra</h1>
+
+        <p class="secondary-font mt-2">
+            Discover premium collections crafted for your lifestyle.
+        </p>
+
+        <div class="input-boxes flex items-center gap-3 mt-5 justify-center md:justify-start">
+            <input type="text" placeholder="Search products" 
+                class="Search-input text-black p-2 rounded w-52">
+            
+            <div class="filter-box bg-gray-50 border border-black p-2 rounded cursor-pointer"
+                onclick="toggleFilter()">
+                <i class="fa-solid fa-filter fa-lg" style="color:#006039;"></i>
+            </div>
+        </div>
+
+        <div class="btn-default mt-5">Shop Now</div>
+    </div>
+
+
+    <div id="filterPanel" 
+        class="filter-panel hidden absolute left-1/2 -translate-x-1/2 mt-5 bg-white p-5 rounded shadow-lg w-72">
+        
+        <div class="filter-section">
+            <h4>Category</h4>
+            <div class="filter-options flex flex-wrap gap-2 mt-2">
+                <button class="option active">All</button>
+                <button class="option">Clothing</button>
+                <button class="option">Accessories</button>
+                <button class="option">Bags</button>
+                <button class="option">Footwear</button>
+                <button class="option">Jewelry</button>
+            </div>
+        </div>
+
+        <div class="filter-section mt-4">
+            <h4>Price Range</h4>
+            <div class="filter-options flex flex-wrap gap-2 mt-2">
+                <button class="option active">All</button>
+                <button class="option">Under $100</button>
+                <button class="option">$100 - $300</button>
+                <button class="option">Over $300</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js" defer></script>
+</html>
