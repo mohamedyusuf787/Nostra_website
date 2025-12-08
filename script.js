@@ -14,6 +14,8 @@ let navbar = document.getElementById("nav_bar")
 let logoemblem = document.getElementById("logo-emblem")
 let logomark = document.getElementById("logo-mark")
 let navlink=document.querySelector(".navbar-links")
+let menubtn=document.querySelector("#menu-btn")
+
 
 // cancel btn for offer bar 
 cancelbtn.addEventListener("click", () => {
@@ -22,6 +24,8 @@ cancelbtn.addEventListener("click", () => {
     logoemblem.style.fill = "#ffffff"
     logomark.style.fill = "#ffffff"
     navlink.style.color="#ffffff"
+    menubtn.style.color="#ffffff"
+
 }
 );
 
