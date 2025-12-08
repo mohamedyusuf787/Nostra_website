@@ -172,19 +172,11 @@ body::-webkit-scrollbar {
 /* testimonial */
 .testimonial_section {
     padding: 0px 80px;
-    /* display: flex;
-    flex-direction: column;
-    gap: 40px;
-    margin-top: 80px;
-    padding-left: 80px;
-    border: 2px solid black; */
 }
 .testimonial-cards{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /* padding: 0px 80px; */
-    /* border: black 5px solid; */
     justify-content: space-around;
     /* align-items: center; */
 }
@@ -426,5 +418,8 @@ figure.snip1390 .profile {
 
     .filter-options {
         gap: 8px;
+    }
+    .testimonial_section{
+        padding: 0px 20px;
     }
 }
