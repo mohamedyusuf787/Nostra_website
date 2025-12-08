@@ -285,6 +285,7 @@ figure.snip1390 .profile {
 }
 .social-icons {
     display: flex;
+    flex-wrap:wrap;
     gap: 15px;
 }
 .copyright {
@@ -422,4 +423,7 @@ figure.snip1390 .profile {
     .testimonial_section{
         padding: 0px 20px;
     }
+.footer{
+    padding:40px;
 }
+
