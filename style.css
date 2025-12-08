@@ -278,6 +278,7 @@ figure.snip1390 .profile {
 }
 .social-media {
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
     gap: 15px;
@@ -424,6 +425,8 @@ figure.snip1390 .profile {
         padding: 0px 20px;
     }
 .footer{
-    padding:40px;
+    padding:20px;
 }
+}
+
 
